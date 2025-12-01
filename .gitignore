@@ -1,0 +1,95 @@
+########################################
+# Base ignores (macOS, editors, shells)
+########################################
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Vim
+*.swp
+*.swo
+*.viminfo
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# SSH keys (never commit)
+*.pem
+*.key
+*.pub
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+
+# Zsh & shells
+*.zsh_history
+*.bash_history
+
+# Common temp files
+*.tmp
+*.log
+*.bak
+*.old
+
+########################################
+# Observability-app specific
+# (app instrumentation, helpers, SDKs)
+########################################
+
+# OpenTelemetry auto-generated local files
+.otlp-cache/
+otel-cache/
+otel-logs/
+otel-temp/
+
+# Local run output (not deployment config)
+logs/
+tmp/
+cache/
+
+########################################
+# Language-specific build artefacts
+# (App-focused, as app integrations vary)
+########################################
+
+# Node.js
+node_modules/
+dist/
+build/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# Go
+bin/
+*.exe
+*.test
+
+# Java / JVM
+target/
+*.jar
+*.war
+*.class
+
+########################################
+# IDE / Dev Tools
+########################################
+
+# VS Code
+.vscode/
+
+# JetBrains / IntelliJ
+.idea/
+*.iml
+
+# Local Docker build artefacts
+docker-data/
+.dockerignore-local
